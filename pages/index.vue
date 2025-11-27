@@ -33,11 +33,18 @@
       </h3>
       
       <UiCard>
-        <RealtimeLineChart 
-          :incoming-rate="stats.incomingRate"
-          :processed-rate="stats.processedRate"
-          height="400px"
-        />
+        <ClientOnly>
+          <RealtimeLineChart 
+            :incoming-rate="stats.incomingRate"
+            :processed-rate="stats.processedRate"
+            height="400px"
+          />
+          <template #fallback>
+            <div class="flex items-center justify-center h-[400px] text-gray-500">
+              Loading chart...
+            </div>
+          </template>
+        </ClientOnly>
       </UiCard>
     </div>
 
