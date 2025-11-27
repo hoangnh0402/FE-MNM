@@ -15,13 +15,13 @@
     </div>
     
     <div class="space-y-2">
-      <p class="text-sm text-gray-400 uppercase tracking-wider">
+      <p class="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">
         {{ label }}
       </p>
-      <p class="text-4xl font-bold text-neon animate-fade-in">
+      <p class="text-4xl font-bold text-primary dark:text-neon animate-fade-in">
         {{ formattedValue }}
       </p>
-      <p v-if="subtitle" class="text-xs text-gray-500">
+      <p v-if="subtitle" class="text-xs text-gray-700 dark:text-gray-500">
         {{ subtitle }}
       </p>
     </div>

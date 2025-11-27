@@ -10,12 +10,12 @@
         class="w-6 h-6"
         :class="iconColor"
       />
-      <h3 v-if="title" class="text-lg font-semibold text-gray-100">
+      <h3 v-if="title" class="text-lg font-semibold text-gray-900 dark:text-gray-100">
         {{ title }}
       </h3>
     </div>
     
-    <div class="text-gray-300">
+    <div class="text-gray-700 dark:text-gray-300">
       <slot />
     </div>
   </div>
@@ -56,7 +56,7 @@ const iconColor = computed(() => {
     case 'danger':
       return 'text-red-500'
     default:
-      return 'text-gray-400'
+      return 'text-gray-600 dark:text-gray-400'
   }
 })
 </script>

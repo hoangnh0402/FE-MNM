@@ -33,6 +33,12 @@ export default {
                     card: '#1a1f3a',
                     border: '#2a2f4a',
                 },
+                light: {
+                    DEFAULT: '#f8fafc',
+                    lighter: '#f1f5f9',
+                    card: '#ffffff',
+                    border: '#e2e8f0',
+                },
                 neon: {
                     blue: '#00f0ff',
                     pink: '#ff00ff',
@@ -43,6 +49,7 @@ export default {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-cyber': 'linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%)',
+                'gradient-cyber-light': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
             },
             boxShadow: {
                 'neon': '0 0 20px rgba(0, 240, 255, 0.5)',
